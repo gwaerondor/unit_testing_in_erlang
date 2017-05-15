@@ -1,9 +1,14 @@
-basic_erlang_4
-=====
+# Basic Erlang part 4 - eunit and meck
+This is the fourth part of the basic Erlang series.
 
-An OTP application
+We will look more at the functionality provided by eunit:
+- Test modules and test functions (recap)
+- Fixtures
+- Macros
 
-Build
------
+We will also look at [meck, a mocking library for Erlang](https://github.com/eproxus/meck).
 
-    $ rebar3 compile
+##Build and test
+```bash
+rebar3 eunit
+```
