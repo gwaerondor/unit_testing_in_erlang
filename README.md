@@ -8,7 +8,7 @@ We will look more at the functionality provided by eunit:
 
 We will also look at [meck, a mocking library for Erlang](https://github.com/eproxus/meck).
 
-##Build and test
+## Build and test
 ```bash
 rebar3 eunit
 ```
