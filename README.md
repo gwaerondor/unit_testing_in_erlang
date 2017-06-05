@@ -12,3 +12,8 @@ We will also look at [meck, a mocking library for Erlang](https://github.com/epr
 ```bash
 rebar3 eunit
 ```
+
+## Exercises
+There is a directory called exercises, which is a separate rebar application. This means that if you enter the exercises directory, you can run the exercise tests with the same command as above, rebar3 eunit
+
+More information about the exercises is available in that directory.
