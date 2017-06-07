@@ -12,4 +12,3 @@ add_three_numbers_test() ->
 
 add_negative_number_test() ->
     ?assertEqual(1000, 2000 + (-1000)).
-

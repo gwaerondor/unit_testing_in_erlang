@@ -19,6 +19,5 @@ my_qsort([]) ->
     [];
 my_qsort([Pivot | L]) ->
     my_qsort([X || X <- L, X < Pivot])
-	++ [Pivot]
-	++ my_qsort([X || X <- L, X >= Pivot]).
-    
+        ++ [Pivot]
+        ++ my_qsort([X || X <- L, X >= Pivot]).

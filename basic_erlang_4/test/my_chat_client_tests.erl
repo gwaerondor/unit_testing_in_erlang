@@ -18,8 +18,8 @@ pinging_should_return_error_if_not_connected_test_() ->
 setup_ok_test() ->
     meck_tcp_stuff(),
     meck:expect(my_chat_client,
-		get_ping_response,
-		fun(_) -> pong end),
+                get_ping_response,
+                fun(_) -> pong end),
     my_chat_client:start().
 
 setup_error_test() ->
@@ -40,9 +40,9 @@ unmeck_and_kill(_) ->
 
 ensure_killed(Process) ->
     case whereis(Process) of
-	undefined ->
-	    ok;
-	_ ->
-	    timer:sleep(10),
-	    ensure_killed(Process)
+        undefined ->
+            ok;
+        _ ->
+            timer:sleep(10),
+            ensure_killed(Process)
     end.
