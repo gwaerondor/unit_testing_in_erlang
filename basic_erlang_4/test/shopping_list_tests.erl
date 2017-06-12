@@ -20,7 +20,7 @@ setup() ->
 
 cleanup(_) ->
     ok = file:delete("/tmp/shopping_list").
-    
+
 add_new_item() ->
     shopping_list:add("shampoo"),
     Expected = [{"shampoo", 1} | ?DEFAULT],
@@ -50,4 +50,3 @@ reduce_quantity_a_lot() ->
     Expected = lists:keydelete("apples", 1, ?DEFAULT),
     Result = shopping_list:read(),
     ?assertEqual(Expected, Result).
-    

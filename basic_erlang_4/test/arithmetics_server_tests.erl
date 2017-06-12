@@ -34,6 +34,6 @@ divide() ->
 
 receive_response() ->
     receive
-	X ->
-	    X
+        X ->
+            X
     end.

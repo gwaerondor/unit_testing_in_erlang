@@ -14,5 +14,3 @@ multiplication_is_commutative() ->
 
 multiplication_of_negatives() ->
     100 = (-10) * (-10).
-
-
