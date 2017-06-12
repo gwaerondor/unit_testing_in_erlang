@@ -8,6 +8,9 @@ We will look more at the functionality provided by eunit:
 
 We will also look at [meck, a mocking library for Erlang](https://github.com/eproxus/meck).
 
+If you want to run the examples or do the exercises, it is recommended that you have [rebar3](https://github.com/erlang/rebar3) installed.
+Instructions on how to get it can be found in the README of that project. You can most likely just wget the precompiled version and it'll work. Add it to your path for convenience.
+
 ## Build and test
 ```bash
 rebar3 eunit
