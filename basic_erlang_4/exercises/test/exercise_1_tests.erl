@@ -48,7 +48,7 @@ bye_process() ->
 %% not the functionality of connecting erlang nodes.
 get_hostnames_test() ->
     Hosts = exercise_1:get_hostnames_of_all_connected_nodes(),
-    Expected = ["esekilvv1337.ericsson.com", "spymatic47.nsa.gov"],
+    Expected = ["somehost.somewhere.com", "spymatic47.nsa.gov"],
     ?assertEqual(Expected, Hosts).
 
 %% This one takes too long, which completely messes up all
