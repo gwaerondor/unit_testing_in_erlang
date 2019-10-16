@@ -16,7 +16,8 @@ shopping_list_test_() ->
     }.
 
 setup() ->
-    ok = file:write_file("/tmp/shopping_list", io_lib:format("~p.", [?DEFAULT])).
+    ok = file:write_file("/tmp/shopping_list",
+                         io_lib:format("~p.", [?DEFAULT])).
 
 cleanup(_) ->
     ok = file:delete("/tmp/shopping_list").
